@@ -9,17 +9,17 @@ The goal of this project is to create a completely offline HTML based system to 
 While constructed as a website using HTML, CSS, and Javascript, the system is designed to be able to run locally on any PC using an HTML5 compatable browser. No internet connection, server hosting, or WAMP/XAMP type service required.
 
 ## Table of Contents
-1. [MSVTimers Configuration](#configuration)
+1. [MVSTimers Configuration](#configuration)
     1. [Creating new configuration settings](#create-configure)
     2. [Removing existing incentives](#remove-configure)
     3. [Exporting configuration settings](#export-configure)
     4. [Importing configuration settings](#import-configure)
 2. [Operating MVSTimers](#operation)
 
-## <a name="configuration"></a> MSVTimers Configuration
-MSVTimers will store all configuration options (this includes incentivizations, history, and all active timers) into HTML5 local storage to allow for quick recovery in the event of a browser crash or closure.
+## <a name="configuration"></a> MVSTimers Configuration
+MVSTimers will store all configuration options (this includes incentivizations, history, and all active timers) into HTML5 local storage to allow for quick recovery in the event of a browser crash or closure.
 
-MSVTimers is also capable of exporting current configuration to be shared, allowing moderators to easily pass off the current MVS operation through the use of a CSV, or JSON encoded text file.
+MVSTimers is also capable of exporting current configuration to be shared, allowing moderators to easily pass off the current MVS operation through the use of a CSV, or JSON encoded text file.
 
 Exports and imports can include seperately incentivization settings, history, and active timers.
 
