@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+
+    <!-- begin head -->
+    <head>
+        <title>Man Versus Stream HTML Tracker</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <!-- load css -->
+        <link rel="stylesheet" href="css/base.css"></style>
+        <link rel="stylesheet" href="resources/libraries/jqueryui/jquery-ui.css"></style>
+        <link rel="stylesheet" href="resources/libraries/jqueryui/jquery-ui.structure.css"></style>
+        <link rel="stylesheet" href="resources/libraries/jqueryui/jquery-ui.theme.css"></style>
+    </head>
+    
+    <body>
+        <header>
+            <!-- begin stream timer -->
+            <section id="header-streamTime">
+                <div id="header-streamTime-timer" class="timer">
+                    <span id="header-streamTime-Hours">00</span>:
+                    <span id="header-streamTime-Minutes">00</span>:
+                    <span id="header-streamTime-Seconds">00</span>
+                </div>
+                <div id="header-streamTime-start">
+                    <div id="header-streamTime-time" class="timer">
+                        <span id="header-streamTime-time-Hours">00</span>:
+                        <span id="header-streamTime-time-Minutes">00</span>:
+                        <span id="header-streamTime-time-Seconds">00</span>
+                    </div>
+                    <div id="header-streamTime-edit" class="btn strong edit">
+                        <span>Edit Start</span>
+                    </div>
+                </div>
+            </section>
+            <!-- end stream timer -->
+            
+            <!-- begin queue tracker -->
+            <section id="header-queueTracker">
+                <div id="header-queueTracker-tierOne" class="queueTracker">
+                    <div class="queueCounter"><span>0</span></div>
+                    <div id="header-queueTracker-tierOne-controls" class="controls">
+                        <div class="queueTrackerControl btn add">
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="queueTrackerControl btn remove">
+                            <span>&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="header-queueTracker-tierTwo" class="queueTracker">
+                    <div class="queueCounter"><span>0</span></div>
+                    <div id="header-queueTracker-tierTwo-controls" class="controls">
+                        <div class="queueTrackerControl btn add">
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="queueTrackerControl btn remove">
+                            <span>&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="header-queueTracker-tierThree" class="queueTracker">
+                    <div class="queueCounter"><span>0</span></div>
+                    <div id="header-queueTracker-tierThree-controls" class="controls">
+                        <div class="queueTrackerControl btn add">
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="queueTrackerControl btn remove">
+                            <span>&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="header-queueTracker-gifts" class="queueTracker">
+                    <div class="queueCounter"><span>0</span></div>
+                    <div id="header-queueTracker-gifts-controls" class="controls">
+                        <div class="queueTrackerControl btn add">
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="queueTrackerControl btn remove">
+                            <span>&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end queue tracker -->
+
+            <!-- begin Configuration management -->
+            <section id="header-configuration">
+            </section>
+            <!-- end Configuration management -->
+
+        </header>
+        <!-- end header -->
+        
+        <!-- begin content -->
+        <article class="content">
+            <!-- begin timers -->
+            <section id="content-timers">
+                <div id="content-timers-challenges">
+                    <!-- Timer templates located in ~/javascript/templates/ -->
+                    <!-- ~~~~~~~~~~~~~ Example timer ACTIVE @TODO REMOVE ~~~~~~~~~~~~~~~~~ -->
+                    <div class="tracker challenge" id="challenge.1" data.start="12.18.12.43" data.end="12.18.17.43">
+                        <div class="trackerTitle"><span>Goggles</span></div>
+                        <div class="trackerTimer timer">
+                            <span class="title">Remaining: </span>
+                            <span class="timers">
+                                <span class="hours">00</span>:
+                                <span class="minutes">00</span>:
+                                <span class="seconds">00</span>
+                            </span>
+                        </div>
+                        <div class="trackerControls">
+                            <div class="btn strong remove">
+                                <span>Cancel</span>
+                            </div>
+                            <div class="btn strong pause">
+                                <span>Pause</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ~~~~~~~~~~~~~ End Example timer ~~~~~~~~~~~~~~~~~ -->
+                </div>
+
+                <div id="content-timers-gifts">
+                    
+                </div>
+            </section>
+            <!-- end timers -->
+            
+            <!-- begin aside -->
+            <aside id="incentives">
+                <div id="incentives-challenges" class="timersHolder">
+                    <div id="incentives-challenges-title">
+                        <h1>Challenges</h1>
+                    </div>
+                    <div id="incentives-challenges-container">
+                    </div>
+                </div>
+                <div id="incentives-gifts" class="timersHolder">
+                    <div id="incentives-gifts-title">
+                        <h1>Gifts</h1>
+                    </div>
+                    <div id="incentives-gifts-container">
+                    </div>
+                </div>
+            </aside>
+            <!-- end aside -->
+        </article>
+        <!-- end content -->
+
+    </body>
+    <!-- end body -->
+
+    <!-- begin footer -->
+    <footer>
+        <!-- load js -->
+        <script type="text/javascript" src="resources/libraries/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="resources/libraries/jqueryui/jquery-ui.js"></script>
+        <script type="text/javascript" src="javascript/operational.js"></script>
+        <script type="text/javascript" src="javascript/objects.js"></script>
+        
+        <div id="disclaimer">
+            <p>
+                Created by User VapidActions. Application Licensed under 
+                <a href="resources/license.txt" target="_blank"><img alt="wtfpl-badge" src="resources/images/wtfpl-badge-2.png" width="80" height="15"></a>
+                - Contained libraries maintain their licensing.
+            </p>
+            <p>
+                <small>Contact Email:</small><a href="mailto:comatosekiller@gmail.com">comatosekiller@gmail.com</a>
+            </p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+</html>
